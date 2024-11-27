@@ -219,3 +219,34 @@ input {
   margin-top: 10px;
   color: black;
 }
+.main-convert_content{
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+.convert-items_change{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.item-change_input{
+  border: 1px solid #4277a5;
+  border-radius: 5px;
+  padding: 5px;
+}
+.convert-item_select{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.convert-item_select > select{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+select:focus{
+  outline: none;
+}
+.convert-item_main{
+  margin-right: 30px;
+}
