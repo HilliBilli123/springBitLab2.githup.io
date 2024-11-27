@@ -9,10 +9,6 @@ function onChangeCurrency(){
     USD = document.querySelector("#USD")
     EUR = document.querySelector("#EUR")
     KZT = document.querySelector("#KZT")
-    if(value.value == ''){
-        alert("Количество не заполнено")
-        return
-    }
     intValue = value.value
     if(selectCurrency.value == "USD"){
         if(selectBuyOrSell.value == "buy"){
