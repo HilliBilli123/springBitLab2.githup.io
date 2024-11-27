@@ -51,7 +51,3 @@ function onChangeCurrency(){
         }
     }
 }
-document.addEventListener("DOMContentLoaded", () => {
-    value = document.querySelector("#value").value = 500
-    onChangeCurrency()
-  });
