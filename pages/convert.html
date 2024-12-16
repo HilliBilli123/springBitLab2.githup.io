@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертор</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content content-fixed-width">
+            <div class="header-inside flex-content">
+                <div class="header-logo">
+                    VK
+                </div>
+                <div class="header-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="20px" height="20px">
+                        <path
+                            d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z" />
+                    </svg>
+                    <input type="text" placeholder="Поиск">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-page_content content-fixed-width">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-link">Моя страница</a>
+            <a href="../index.html" class="nav-link">Новости</a>
+            <a href="../index.html" class="nav-link">Сообщение</a>
+            <a href="../index.html" class="nav-link">Друзья</a>
+            <a href="../index.html" class="nav-link">Группы</a>
+            <a href="../index.html" class="nav-link">Фотографии</a>
+            <a href="../index.html" class="nav-link">Музыка</a>
+            <a href="./convert.html" class="nav-link">Конвертер</a>
+        </div>
+        <div class="main-convert_content">
+            <div class="convert-item_main">
+                <div class="convert-item_text">Количество </div>
+                <input onkeyup="onChangeCurrency()" type="text" id="value" placeholder="0.0" class="item-change_input">
+                <div class="convert-item_select">
+                    <select onchange="onChangeCurrency()" name="currency" id="currency">
+                        <option value="USD">Доллар</option>
+                        <option value="EUR">Евро</option>
+                        <option value="KZT">Тенге</option>
+                    </select>
+                    <!-- <select onchange="onChangeCurrency()" name="buyOrSell" id="buyOrSell">
+                        <option value="buy">Купить</option>
+                        <option value="sell">Продать</option>
+                    </select> -->
+                </div>
+                
+            </div>
+            <div class="convert-items_change">
+                <div class="item_change">
+                    <div class="item-change_text">Доллар</div>
+                    <input type="text" id="USD" disabled placeholder="0.0" class="item-change_input">
+                </div>
+                <div class="item_change">
+                    <div class="item-change_text">Евро</div>
+                    <input type="text" id="EUR" disabled placeholder="0.0" class="item-change_input">
+                </div>
+                <div class="item_change">
+                    <div class="item-change_text">Тенге</div>
+                    <input type="text" id="KZT" disabled placeholder="0.0" class="item-change_input">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
