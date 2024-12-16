@@ -15,13 +15,15 @@ function setSession() {
   let parsetJson = JSON.parse(persons);
   let login = document.querySelector("#login");
   let password = document.querySelector("#password");
-  parsetJson.forEach((element) => {
-    if (element.login == login.value && element.password == password.value) {
-      sessionStorage.setItem("accessKey", Math.random());
-      window.location.href =
-        window.location.origin + "/springBitLab2.githup.io/index.html";
-    }
-  });
+  if (parsetJson.length) {
+    parsetJson.forEach((element) => {
+      if (element.login == login.value && element.password == password.value) {
+        sessionStorage.setItem("accessKey", Math.random());
+        window.location.href =
+          window.location.origin + "/springBitLab2.githup.io/index.html";
+      }
+    });
+  }
 }
 function setLocalStoreg() {
   let login = document.querySelector("#login");
