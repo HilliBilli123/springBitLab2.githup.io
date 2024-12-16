@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <div class="content-fixed-width login-center">
+        <div class="login-content">
+            <div class="login-header">
+                Регистрация
+            </div>
+            <div class="login-name">
+                <div class="login-title">Логин</div>
+                <input id="login" class="login-input" type="text">
+            </div>
+            <div class="login-password">
+                <div class="login-title">Пароль</div>
+                <input id="password" class="login-input" type="text">
+            </div>
+            <div class="login-email">
+                <div class="login-title">Почта</div>
+                <input id="email" class="login-input" type="text">
+            </div>
+            <div onclick="setLocalStoreg()" class="login-button">
+                Регистрация
+            </div>
+            <div onclick="authPage()" class="login-button">
+                Вход
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -219,3 +219,57 @@ input {
   margin-top: 10px;
   color: black;
 }
+.exchange-rates_content {
+  flex-basis: 80%;
+  -ms-flex-align: start;
+  display: flex;
+  justify-content: space-between;
+}
+/* .padding-class {
+  flex-basis: 10%;
+} */
+.exchange-rates_item {
+}
+.exchange-rates_item > input {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 0px;
+  width: 200px;
+}
+.exchange-rates_text {
+  margin-bottom: 5px;
+}
+.exchange-rates_select {
+  border: none;
+}
+.login-content {
+  background-color: #4277a5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.login-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-input {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.login-header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.login-button {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
